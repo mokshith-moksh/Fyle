@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tax Calculator</title>
-    <!-- Bootstrap CSS -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,7 +11,7 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <h2>Tax Calculator</h2>
+    <div class="Heading">Tax Calculator</div>
 
     <div class="container">
       <form id="form">
@@ -103,7 +102,9 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submitBtn">
+          Submit
+        </button>
       </form>
     </div>
     <div class="mod">
@@ -114,7 +115,12 @@
             <div class="head"></div>
             <div class="head3">after tax deduction</div>
           </div>
-          <button type="button" class="btn btn-primary" onclick="closeModal()">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            onclick="closeModal()"
+            id="submitBtn"
+          >
             close
           </button>
         </div>
