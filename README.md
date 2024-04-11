@@ -12,5 +12,5 @@
 
 ![Screenshot 2024-04-11 at 2 24 06 PM](https://github.com/mokshith-moksh/Fyle/assets/121559082/56fec61a-00b9-4319-a3b7-9e54c0cc10a2)
 
-![Screenshot 2024-04-11 at 2 24 35 PM](https://github.com/mokshith-moksh/Fyle/assets/121559082/fd82d82b-1290-4055-bc68-c747b97fdb7f)
+![Screenshot 2024-04-11 at 3 28 29 PM](https://github.com/mokshith-moksh/Fyle/assets/121559082/37aa381c-6eb3-4f00-b479-18e61862319b)
 
