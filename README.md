@@ -1,6 +1,5 @@
 **Assumptions:**
-- The user will input numerical values representing quantities in terms of "lacks."
-- A "lack" refers to 100,000 (one hundred thousand) as used in the Indian numbering system.
+--A website that allows for tax calculation based on a user's input, assuming the input should be in Indian currency.
 
  The app is hoisted on -----> https://https-github-com-mokshith-moksh-readme-md--fylemokshith.netlify.app/
 
