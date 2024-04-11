@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2>Tax Calculator</h2>
+
+    <div class="container">
+      <form id="form">
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-title="Current age"
+            data-bs-custom-class="custom-tooltip-class"
+          >
+            <img src="./images/question.png" alt="chd" class="img" />
+          </span>
+
+          <select id="age" name="age" required>
+            <option value="" disabled selected>Select Age Range</option>
+            <option value="<40">&lt; 40</option>
+            <option value=">=40&&<60">&gt;= 40 &amp; &lt; 60</option>
+            <option value=">=60">&gt;= 60</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="income">Gross Annual Income:</label>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-title="Gross annual income is your total salary in a year before any deduction"
+            data-bs-custom-class="custom-tooltip-class"
+          >
+            <img src="./images/question.png" alt="chd" class="img" />
+          </span>
+          <div class="input-div">
+            <input type="text" class="form-control" id="income" />
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Please enter the numbers only"
+              data-bs-custom-class="custom-tooltip-class"
+              class="img-input"
+            >
+              <img src="./images/info.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="extraIncome">Extra Income:</label>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-title="Other then regular income"
+            data-bs-custom-class="custom-tooltip-class"
+          >
+            <img src="./images/question.png" alt="chd" class="img" />
+          </span>
+          <div class="input-div">
+            <input type="text" class="form-control" id="extraIncome" />
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Please enter the numbers only"
+              data-bs-custom-class="custom-tooltip-class"
+              class="img-input1"
+            >
+              <img src="./images/info.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="deductions">Deductions:</label>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-title="deductions that to be made"
+            data-bs-custom-class="custom-tooltip-class"
+          >
+            <img src="./images/question.png" alt="chd" class="img" />
+          </span>
+          <div class="input-div">
+            <input type="text" class="form-control" id="deductions" />
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Please enter the numbers only"
+              data-bs-custom-class="custom-tooltip-class"
+              class="img-input2"
+            >
+              <img src="./images/info.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="mod">
+      <div id="myModal" class="modal-container">
+        <div class="modal-content">
+          <div class="text">
+            <div class="head1">Your Income will be</div>
+            <div class="head"></div>
+            <div class="head3">after tax deduction</div>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="closeModal()">
+            close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
