@@ -49,10 +49,14 @@ function calculateTax(grossIncome, extraIncome, deductions, age) {
   extraIncome = Number(extraIncome);
   deductions = Number(deductions);
   let taxableIncome = grossIncome + extraIncome - deductions;
-  if (taxableIncome <= 8) {
-    return 0;
+  if (taxableIncome <= 800000) {
+    return taxableIncome.toLocaleString("en-IN", {
+      maximumFractionDigits: 2,
+      style: "currency",
+      currency: "INR",
+    });
   }
-  let taxableExcess = taxableIncome - 8;
+  let taxableExcess = taxableIncome - 800000;
   let taxRate;
   switch (age) {
     case "<40":
@@ -70,7 +74,11 @@ function calculateTax(grossIncome, extraIncome, deductions, age) {
   }
   const taxAmount = taxableExcess * taxRate;
   const total = grossIncome + extraIncome - taxAmount;
-  return total;
+  return total.toLocaleString("en-IN", {
+    maximumFractionDigits: 2,
+    style: "currency",
+    currency: "INR",
+  });
 }
 
 function openModal() {
